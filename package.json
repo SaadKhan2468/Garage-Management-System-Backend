@@ -4,8 +4,8 @@
   "description": "Backend API for the garage management application.",
   "main": "dist/server.js",
   "scripts": {
+    "dev": "ts-node-dev server.ts",
     "build": "tsc && prisma generate",
-    "dev": "ts-node-dev src/server.ts",
     "start": "node dist/server.js",
     "lint": "eslint --ext .ts src",
     "db:touch": "node -e \"const fs=require('fs');const path=require('path');const target=path.join(__dirname,'prisma','dev.db');if(!fs.existsSync(target)){fs.mkdirSync(path.dirname(target),{recursive:true});fs.closeSync(fs.openSync(target,'w'));}\"",
