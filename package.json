@@ -4,7 +4,7 @@
   "description": "Backend API for the garage management application.",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev server.ts",
+    "dev": "ts-node-dev src/server.ts",
     "build": "tsc && prisma generate",
     "start": "node dist/server.js",
     "lint": "eslint --ext .ts src",
